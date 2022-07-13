@@ -6,9 +6,9 @@ export const Project = sequelize.define(
   "projects",
   {
     id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
-    name: { type: DataTypes.STRING },
-    priority: { type: DataTypes.STRING },
-    description: { type: DataTypes.STRING },
+    name: { type: DataTypes.STRING, allowNull: false },
+    priority: { type: DataTypes.STRING, allowNull: false },
+    description: { type: DataTypes.STRING, allowNull: false },
   },
   {
     timestamps: true,
